@@ -1,0 +1,734 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity position="0.5 0.3 -1">
+      <a-box wireframe=true position="-1 1 -3" rotation="0 0 0" depth="3" width="5" height="3"color="black"></a-box>
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="10 0.3 -1" rotation="0 0 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="0.5 0.3 -0.5" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="-5 0.3 -13.5" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="8 0.3 -13.5" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="5 0.3 -20.3" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="10 0.3 -0.3" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+    <a-entity position="-8 0.3 -0.3" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+      <a-entity position="0.5 0.3 12.5">
+
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+      <a-entity position="8 0.3 12.5">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+      <a-entity position="-6 0.3 -1">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+      <a-entity position="18 0.3 -1">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+      <a-entity position="-5 0.3 -20.3" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+      <a-entity position="15 0.3 -20.3" rotation="0 180 0">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+      </a-entity>
+
+      <a-entity position="18 0.3 12.5">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+
+      <a-plane src=road.jpg position="0 0 -4" rotation="-90 90 0" width="50" height="50" repeat="15 15" ></a-plane>
+      <a-sky src="sky2.jpeg"></a-sky>
+    </a-scene>
+  </body>
+</html>
