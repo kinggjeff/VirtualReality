@@ -4,34 +4,572 @@
   </head>
   <body>
     <a-scene>
-      <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
-        <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="0 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
+    <a-assests>
+      <img id="wall" src="wall.jpg">
+      <img id="garage" src="garage.jpg">
+      <img id="garage2" src="garage_2.jpg">
+      <img id="roof" src="roof.webp">
+      <img id="window" src="window.png">
+      <img id="porchroof" src="porch_roof.jpg">
+    </a-assests>
+    <a-entity class="house">
+<!--garage-->
+    <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
+      <a-entity class="plank" position="2 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="1 0 0">
+         <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#garage"></a-box>
+         <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#garage"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="0 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#garage2"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#garage2"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="-1 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#garage2"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#garage2"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
         <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
         </a-entity>
       </a-entity>
-      
+
+      <a-entity class="plain_wall" position="2.45 0 2.5" rotation="0 90 0">
+        <a-entity class="plank" position="2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="2.45 0 5.5" rotation="0 90 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+     <a-entity class="plain_wall" position="-2.45 0 2.5" rotation="0 90 0">
+        <a-entity class="plank" position="2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="-2.45 0 5.5" rotation="0 90 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+   <a-entity class="plain_wall" position="0 0 8" rotation="0 0 0">
+      <a-entity class="plank" position="2 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="1 0 0">
+         <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="0 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="-1 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="-2.45 3 5.55" rotation="0 90 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+     <a-entity class="plain_wall" position="-2.45 3 2.55" rotation="0 90 0">
+        <a-entity class="plank" position="1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <!--roof-->
+    <a-entity class="roof">
+    <a-box position="0.26 3.25 4" width="5.5" height="0.5" depth="9" src="#roof"></a-box>
+    ></a-entity>
+    <a-entity class="roof">
+    <a-box position="-6.4 6.25 4.4" width="9" height="0.5" depth="7.5" src="#roof"></a-box>
+    ></a-entity>
+      <!--Main House-->
+   <a-entity class="plain_wall" position="-5 0 8" rotation="0 0 0">
+      <a-entity class="plank" position="2 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="1 0 0">
+         <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="0 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="-1 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="-8 0 8" rotation="0 0 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall3" position="-10.45 0 5.45" rotation="0 90 0" >
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+
+      <a-entity class="plain_wall2" position="-10.45 0 3.45" rotation="0 90 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall3" position="-10.45 0 0.45" rotation="0 90 0" >
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+   <a-entity class="plain_wall" position="-5 0 1" rotation="0 0 0">
+      <a-entity class="plank" position="2 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="1 0 0">
+         <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="0 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="-1 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="-8 0 1" rotation="0 0 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall" position="-5 3 8" rotation="0 0 0">
+      <a-entity class="plank" position="2 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="1 0 0">
+         <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="0 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="-1 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="-8 3 8" rotation="0 0 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall3" position="-10.45 3 5.45" rotation="0 90 0" >
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+
+      <a-entity class="plain_wall2" position="-10.45 3 3.45" rotation="0 90 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall3" position="-10.45 3 0.45" rotation="0 90 0" >
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+   <a-entity class="plain_wall" position="-5 3 1" rotation="0 0 0">
+      <a-entity class="plank" position="2 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="1 0 0">
+         <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+         <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="0 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+      <a-entity class="plank" position="-1 0 0">
+        <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+      </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+
+      <a-entity class="plain_wall2" position="-8 3 1" rotation="0 0 0" >
+        <a-entity class="plank" position="0 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-1 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+        <a-entity class="plank" position="-2 0 0">
+          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src="#wall"></a-box>
+        </a-entity>
+      </a-entity>
+<!--front_porch-->
+    <a-entity class="floor" position="-6.5 0 0">
+      <a-box position="0 0 0" width="7.9" height="0.5" depth="2.8" color="grey" ></a-box>
+      <a-box position="-1 0 -1.9" width="2" height="0.3" depth="1" color="grey" ></a-box>
+      <a-cylinder position="-3.85 0 -1.1" height="5.5" radius="0.1" color="black" ></a-cylinder>
+      <a-cylinder position="3.85 0 -1.1" height="5.5" radius="0.1" color="black" ></a-cylinder>
+      <a-box position="0 3 -0.5" rotation="-25 0 0" width="8" height="0.3" depth="3" src="#porchroof" ></a-box>
+      <a-cylinder position="-2 0 -1.1" height="2" radius="0.1" color="black" ></a-cylinder>
+      <a-cylinder position="0 0 -1.1" height="2" radius="0.1" color="black" ></a-cylinder>
+      <a-cylinder position="-2.9 1 -1.1" height="2" radius="0.1" rotation="90 90 0" color="black"></a-cylinder>
+      <a-cylinder position="1.9 1 -1.1" height="4" radius="0.1" rotation="90 90 0" color="black"></a-cylinder>
+      <a-cylinder position="-3.85 1 0" height="2" radius="0.1" rotation="90 0 0" color="black"></a-cylinder>
+     <a-cylinder position="3.85 1 0" height="2" radius="0.1" rotation="90 0 0" color="black"></a-cylinder>
+      <a-cylinder position="-2.9 0.5 -1.1" height="2" radius="0.1" rotation="90 90 0" color="black"></a-cylinder>
+      <a-cylinder position="1.9 0.5 -1.1" height="4" radius="0.1" rotation="90 90 0" color="black"></a-cylinder>
+      <a-cylinder position="-3.85 0.5 0" height="2" radius="0.1" rotation="90 0 0" color="black"></a-cylinder>
+      <a-box position="2 0.5 0.3" width="1.5" height="0.1" depth="0.5" color="brown" ></a-box>
+      <a-box position="2 0.85 0.6" rotation="90 0 0" width="1.5" height="0.1" depth="0.5" color="brown" ></a-box>
+      <a-cylinder position="2.6 0.7 0.7" height="0.9" radius="0.05" rotation="0 0 0" color="black"></a-cylinder>
+      <a-cylinder position="1.4 0.7 0.7" height="0.9" radius="0.05" rotation="0 0 0" color="black"></a-cylinder>
+      <a-cylinder position="1.4 0.3 0.1" height="0.3" radius="0.05" rotation="0 0 0" color="black"></a-cylinder>
+      <a-cylinder position="2.6 0.3 0.1" height="0.3" radius="0.05" rotation="0 0 0" color="black"></a-cylinder>
+    </a-entity>
+</a-entity>
+<!--tree-->
+     <a-entity position="5 0 -5">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <!-- Pines -->
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-entity>
+
+<!--car-->
+      <a-entity class="car" position="0.5 0.3 -1">
+      <!-- Body -->
+      <a-box position="-1 0.5 -3" rotation="0 0 0" depth="1.5" width="4" height="0.9"color="grey"></a-box>
+      <a-box position="-1.5 1.3 -3" rotation="0 0 0" depth="1.5" width="2" height="0.7"color="grey"></a-box>
+      <a-box position="-1.45 0.85 -3" rotation="0 0 0" depth="1.51" width="0.01" height="1.4"color="black"></a-box>
+      <a-box position="-1.3 0.95 -3" rotation="0 0 90" depth="1.51" width="0.01" height="2.2"color="black"></a-box>
+      <a-box position="-0.56 1.09 -3" rotation="180 0 240" depth="1.5" width="0.9" height="0.7"color="grey"></a-box>
+      <a-box position="-1.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <a-box position="-2.2 0.8 -3" rotation="0 0 0" depth="1.6" width="0.2" height="0.1"color="black"></a-box>
+      <!--windows-->
+      <a-box src=window.jpg position="-0.56 1.1 -3" rotation="181 0 240" depth="1.2" width="0.6" height="0.71"color="white"></a-box>
+      <a-box src=window.jpg position="-1.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-0.95 1.29 -3" rotation="0 0 0" depth="1.51" width="0.8" height="0.55"color="white"></a-box>
+      <a-box src=window.jpg position="-2.5 1.25 -3" rotation="0 0 90" depth="1.2" width="0.5" height="0.1"color="white"></a-box>
+      <a-cylinder position="-0.2 1 -2.19" color="black" radius="0.03" height="0.15" rotation="145 130 145"></a-cylinder>
+      <a-cylinder position="-0.2 1 -3.8" color="black" radius="0.03" height="0.15" rotation="145 320 145"></a-cylinder>
+      <a-box position="-0.2 1.05 -2.06" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box position="-0.2 1.05 -3.93" rotation="0 0 90" depth="0.2" width="0.1" height="0.1"color="black"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -2.06" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <a-box src=window.jpg position="-0.205 1.05 -3.93" rotation="0 0 90" depth="0.19" width="0.09" height="0.1"color="white"></a-box>
+      <!-- Wheels -->
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -2.2" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -2.19" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="-2.2 0.1 -3.8"  radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="-2.2 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=wheel.jpg position="0.3 0.1 -3.8" radius="0.4" height="0.3" rotation="90 90 90"></a-cylinder>
+      <a-cylinder src=rim.png position="0.3 0.1 -3.81" radius="0.3" height="0.3" rotation="90 90 90"></a-cylinder>
+      <!--Lights-->
+      <a-box position="1 0.68 -2.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1 0.68 -3.5" depth="0.1" width="0.25" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="1.01 0.6 -3.6" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="1.01 0.6 -2.4" depth="0.1" width="0.15" height="0.15" rotation="0 90 0" color="yellow"></a-box>
+      <a-box position="-3 0.68 -2.476" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -3.525" depth="0.1" width="0.2" height="0.25" rotation="0 90 0"></a-box>
+      <a-box position="-3 0.68 -2.3" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <a-box position="-3 0.68 -3.7" depth="0.1" width="0.15" height="0.25" rotation="0 90 0" color="red"></a-box>
+      <!--Bumper/Grill-->
+      <a-box position="1.01 0.55 -3" depth="0.1" width="0.6" height="0.35" rotation="0 90 0" color="black"></a-box>
+      <a-box src=bumper_grill.webp position="1.02 0.55 -3" depth="0.1" width="0.5" height="0.3" rotation="0 90 0" ></a-box>
+      <a-box position="0.91 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.95 0.18 -3" depth="0.3" width="1.6" height="0.25" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-1 0.1 -3" depth="3" width="1.6" height="0.1" color="black"rotation="0 90 0"></a-box>
+      <a-box position="-2.75 0.95 -3" depth="0.7" width="1.55" height="0.03" color="black" rotation="0 90 0"></a-box>
+      <a-box src=license_plate.png position="-3 0.6 -3" depth="0.1" width="0.5" height="0.25" rotation="0 90 0"></a-box>
+    </a-entity>
+
+
       <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-camera position="0 1.4 5"></a-camera>
