@@ -10,7 +10,7 @@ class UFO {
     this.obj = document.createElement("a-entity");
 
     let lowerDisk = document.createElement("a-cone");
-    lowerDisk.setAttribute("radius-bottom", "4");
+    lowerDisk.setAttribute("radius-bottom", "4.2");
     lowerDisk.setAttribute("radius-top", "2.5");
     lowerDisk.setAttribute("height", "1");
     lowerDisk.setAttribute("rotation", "180 0 0");
@@ -34,15 +34,15 @@ class UFO {
     this.obj.append(upperHull);
 
     let dome = document.createElement("a-sphere");
-    dome.setAttribute("radius", "1");
+    dome.setAttribute("radius", "1.5");
     dome.setAttribute("position", "0 1.4 0");
-    dome.setAttribute("color", "cyan");
+    dome.setAttribute("color", "red");
     dome.setAttribute("opacity", "0.25");
     this.obj.append(dome);
 
     let domeFrame = document.createElement("a-torus");
-    domeFrame.setAttribute("radius", "1.05");
-    domeFrame.setAttribute("radius-tubular", "0.05");
+    domeFrame.setAttribute("radius", "1.1");
+    domeFrame.setAttribute("radius-tubular", "0.1");
     domeFrame.setAttribute("position", "0 1.4 0");
     domeFrame.setAttribute("rotation", "90 0 0");
     domeFrame.setAttribute("color", "black");
@@ -50,10 +50,10 @@ class UFO {
 
     let underGlow = document.createElement("a-torus");
     underGlow.setAttribute("radius", "1.8");
-    underGlow.setAttribute("radius-tubular", "0.1");
+    underGlow.setAttribute("radius-tubular", "0.2");
     underGlow.setAttribute("rotation", "90 0 0");
     underGlow.setAttribute("position", "0 -0.35 0");
-    underGlow.setAttribute("color", "cyan");
+    underGlow.setAttribute("color", "red");
     underGlow.setAttribute("opacity", "0.6");
     this.obj.appendChild(underGlow);
 
